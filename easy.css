@@ -1,0 +1,452 @@
+*  {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #ffffff;
+    color: #333;
+     line-height: 1.8;
+}
+
+
+/* HEADER */
+
+.header {
+background: url('images/Easy\ image.png') no-repeat center center/contain;
+height: 120vh;
+display: flex;
+flex-direction: column;
+align-items: center;
+width: 100%;
+background-color: #1774FF;
+text-decoration-color: #f0f0f0;
+    
+}
+
+.header h1, .header p {
+    color: white; 
+    Margin-top: 30px; /* Set text color to white */
+}
+
+.header p {
+    text-align: center; /* Center-align the text */
+    line-height: 1.5;
+    margin: 0px 40px 0px 40px;
+     /* Set margin to 0px for top and bottom, 20px for left and right */
+    font-size: 1.2em; /* Set font size */
+    font-weight: 300; /* Set font weight to light */
+    padding: 10px; /* Add padding for better spacing */
+    
+}
+.header .home-link {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    text-decoration: none;
+}
+.hero-2 h2 {
+    text-align: center;
+} 
+ .x-icon {
+    width: 24px;
+    height: 24px;
+    align-items: flex-start;
+    margin: 1px auto; /* Space between the icon and text */
+    fill: #ffffff; /* Change the color of the SVG */
+}
+ /* Summary */
+ .grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Three columns */
+    grid-template-rows: repeat(2, auto); /* Two rows */
+    gap: 20px; /* Space between grid items */
+    padding: 20px;
+    margin: 40px;
+}
+.project-overview  {
+    
+    margin: 20px;
+    padding: 40px;
+}
+
+.user-interview  {
+    max-width: 92%; /* Set the width to 80% of the parent container */
+    background-color: #F2F8FF; /* Background color */
+    padding: 40px; /* Add padding for spacing */
+    margin: 0 auto; /* Center the section horizontally */
+    border-radius: 10px; /* Add rounded corners */
+}
+
+.feedback {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Two equal columns */
+    gap: 40px; /* Space between columns */
+    margin: 10px;
+    padding-top: 10px; 
+    }
+
+.expert {
+        max-width: 92%;
+        background-color: #F2F8FF; 
+        padding: 40px; 
+        margin: 0 auto; 
+        border-radius: 10px; 
+        margin-top: 40px;
+    }
+
+.expert-1 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); 
+    gap: 40px; 
+    margin: 10px;
+    padding-top: 10px; 
+}
+
+.competitor {
+    max-width: 92%;
+    background-color: #F2F8FF; 
+    padding: 40px; 
+    margin: 0 auto; 
+    border-radius: 10px; 
+    margin-top: 40px;
+}
+.competitor h4 {
+    margin-bottom: 10px;
+}
+
+.define {
+     padding: 40px; 
+    margin: 20px;   
+}
+
+.define p{
+    margin-bottom: 20px;
+}
+
+.user-persona { 
+    margin: 20px;
+    padding: 40px;  
+}
+
+/* Profile Card CSS */
+ /* .container {
+     display: grid;
+            grid-template-columns: 1fr 2fr;
+            gap: 40px;
+            max-width: 1200px;
+            height: 690px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 24px;
+            padding: 40px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.07);
+             border: 1px solid #D2D2D2;
+        }
+        
+.profile-card {
+    max-width: 300px;
+    background-color: #F2F8FF;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    text-align: center;
+    margin: 20px auto;
+    padding: 20px;
+}
+
+.profile-image img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-bottom: 15px;
+     object-fit: cover;
+}
+
+.profile-info h3 {
+    font-size: 1.5em;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+.profile-info p {
+    font-style: italic;
+    font-size: 0.9em;
+    color: #666;
+    margin-bottom: 10px;
+}
+
+.profile-details {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    width: 100%;
+}
+
+
+.profile-details ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.details-right ul {
+    text-align: right;
+    margin-right: 30px;
+}
+.details-left ul {
+    text-align: left;
+    margin-left: 30px;
+    font-weight: bold;   
+} */
+
+/* --- Card Container Styling --- */
+.user-persona-card {
+    display: flex;
+    width: 1000px; /* Adjust based on desired size */
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        border: 1px solid #D2D2D2;
+    overflow: hidden; /* Important for containing rounded corners */
+    margin: 40px auto; /* Center the card on the page */
+}
+
+/* --- Left Column (Personal Details) Styling --- */
+.left-column {
+    flex: 0 0 300px; /* Fixed width for the left column */
+    background-color: #e6f0f8; /* Light blue/grey background */
+    padding: 30px 25px;
+    text-align: center;
+    border-right: 1px solid #ddd;
+}
+
+.name {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+
+.profile-image-container {
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.profile-image {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%; /* Makes the image circular */
+    object-fit: cover;
+    border: 3px solid #fff; /* Optional: border around the image */
+}
+
+.quote {
+    font-style: italic;
+    color: #5f6368;
+    margin-bottom: 30px;
+    font-size: 14px;
+    line-height: 1.4;
+    padding: 0 10px;
+}
+
+.details-list {
+    text-align: left;
+    margin-top: 20px;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    padding-top: 20px;
+}
+
+.detail-row {
+    display: flex;
+    justify-content: space-between;
+    padding: 5px 0;
+    font-size: 15px;
+    border-bottom: 1px solid #e1e4e8;
+}
+
+.detail-row:last-child {
+    border-bottom: none;
+}
+
+.label {
+    font-weight: bold;
+    color: #555;
+}
+
+.value {
+    color: #333;
+}
+
+/* --- Right Column (Content) Styling --- */
+.right-column {
+    flex: 1;
+    padding: 30px;
+}
+
+.section-title {
+     margin: 10px;
+    padding-bottom: 5px;
+}
+
+.about p {
+    font-size: 15px;
+    line-height: 1.6;
+    margin-bottom: 30px;
+}
+
+.goals-pains-grid {
+    display: flex;
+    gap: 30px;
+    margin-top: 20px;
+}
+
+.goals, .pain-points {
+    flex: 1;
+}
+
+.goals ul, .pain-points ul {
+    list-style: disc; /* Use a default disc style */
+    padding-left: 20px;
+    margin: 0;
+}
+
+.goals li, .pain-points li {
+    font-size: 15px;
+    margin-bottom: 10px;
+    line-height: 1.4;
+    color: #444;
+}
+
+.ideate {
+        padding: 40px; 
+        margin: 20px;   
+}
+
+.prototype {
+        padding-left: 40px; 
+        margin-left: 20px;   
+}
+
+.screen-header {
+      padding: 40px; 
+        margin: 20px; 
+}
+
+.screen-header h3 {
+   text-align: center;
+}
+.mobile-screen {
+      background-color: #F2F8FF; 
+        padding: 40px; 
+        border-radius: 10px; 
+        margin-top: 40px;
+        padding-left: 2%; 
+        display: flex;
+        justify-content: center; 
+        gap: 30px;
+    }
+    
+        
+
+.screen-header-1 {
+      padding-left: 40px; 
+        margin: 20px; 
+}
+
+
+/* feedback */
+        .feedback-container {
+            position: relative; /* Allows absolute positioning of the circle */
+            background-color: #f9f9fa; /* Very light grey/white background */
+            
+            max-width: 1200px;
+            padding: 60px; /* Space around the edges */
+            border-radius: 40px; /* Rounded corners */
+            margin: 60px; /* Center the container on the page */
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1); /* Subtle shadow for depth */
+
+            
+            /* Creating a 2x2 Grid for the quotes */
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: auto auto;
+            gap: 50px 210px; /* Gap between rows (40px) and columns (150px) to leave room for the circle */
+        }
+
+        /* The Quotes Styling */
+        .quote {
+            font-size: 1.1rem;
+            color: #444;
+            line-height: 1.4;
+            text-align: center;
+            font-style: italic;
+        }
+
+        /* Specific positioning adjustments to match the image's "floaty" feel */
+        .top-left {
+            align-self: end;
+        }
+        .top-right {
+            align-self: end;
+        }
+        .bottom-left {
+            align-self: start;
+        }
+        .bottom-right {
+            align-self: start;
+        }
+
+        /* The Center Circle */
+        .center-circle {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%); /* Perfectly centers the element */
+            
+            width: 180px;
+            height: 180px;
+            background-color: #bfaee3; /* Soft Purple/Lavender color */
+            border-radius: 50%;
+            
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05); /* Optional: subtle shadow for depth */
+        }
+        
+
+        /* Text inside the circle */
+        .center-circle h2 {
+            font-family: 'Cookie', cursive; /* A slightly thicker script font for the title */
+            font-size: 2.3rem;
+            color: #333;
+            font-weight: normal;
+            line-height: 1;
+        }
+
+        /* Mobile Responsiveness */
+        @media (max-width: 768px) {
+            .feedback-container {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                gap: 30px;
+                padding: 30px;
+            }
+
+            /* On mobile, we stop using absolute positioning so the circle flows naturally */
+            .center-circle {
+                position: relative;
+                top: auto;
+                left: auto;
+                transform: none;
+                margin: 20px 0;
+                order: -1; /* Puts the circle at the top, or remove this to put it in the middle */
+            }
+        }

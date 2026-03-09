@@ -137,6 +137,8 @@ h1, h2, h3, h4, h5, h6 {
 }
 .btn-outline-light {
     border: 1px solid var(--light-2);
+     background: var(--purple);
+    color: var(--white);
 }
 .btn-primary {
     background: var(--purple);
@@ -549,6 +551,7 @@ input[type='text']::placeholder, input[type='email']::placeholder,::placeholder 
 
 .portfolio-section {
     padding: 104px 0 176px;
+    width: 100%; /* Ensure it takes full width of the container */
 }
 .portfolio-section .section-name {
     display: flex;
@@ -566,7 +569,7 @@ input[type='text']::placeholder, input[type='email']::placeholder,::placeholder 
     width: 40px;
     height: 40px;
     background: var(--purple-light-2);
-    border-radius: 16px;
+    border-radius: 20px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -629,7 +632,7 @@ input[type='text']::placeholder, input[type='email']::placeholder,::placeholder 
     left: 0;
     box-shadow: 0 1px 20px rgba(0, 0, 0, .02);
     z-index: 2;
-    border: 1px solid var(--light-3);
+    border: 3px solid var(--light-3);
     border-top-color: transparent;
     border-bottom-left-radius: 8px;
     border-bottom-right-radius: 8px;
@@ -667,10 +670,11 @@ input[type='text']::placeholder, input[type='email']::placeholder,::placeholder 
     justify-content: center;
     width: 100px;
     height: 40px;
-    border: 1px solid var(--purple-light-1);
-    border-radius: 16px;
-    margin-left: 16px;
+    border: 1px solid var(--purple); /* Ensure the border is purple */
+    border-radius: 8px;
     cursor: pointer;
+    background-color: var(--purple); /* Set primary color as background */
+    color: white; /* Set text color to white */
 }
 
 /* WORK EXPERIENCES */
@@ -1121,6 +1125,7 @@ input[type='text']::placeholder, input[type='email']::placeholder,::placeholder 
 .footer .copyright .bold {
     font-weight: 500;
 }
+
 /* RESPONSIVE */
 @media only screen and (max-width: 1280px) {
     /* GENERAL */
